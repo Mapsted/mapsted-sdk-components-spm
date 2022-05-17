@@ -1,0 +1,63 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MapstedComponentsCore
+import Foundation
+@_exported import MapstedComponentsCore
+import Swift
+import UIKit
+import _Concurrency
+public struct TableViewSection {
+  public let sectionName: MapstedComponentsCore.SectionName
+  public var rowCount: Swift.Int
+  public let isActive: Swift.Bool
+  public init(sectionName: MapstedComponentsCore.SectionName, rowCount: Swift.Int = 0, isActive: Swift.Bool)
+}
+public enum SectionName {
+  case Empty
+  case About
+  case HelpMeFind
+  case Categories
+  case Campuses
+  case Buildings
+  case PropertyInfo
+  case ContactInfo
+  case NewsFeed
+  case WorkingHours
+  case PointsOfInterest
+  public static func == (a: MapstedComponentsCore.SectionName, b: MapstedComponentsCore.SectionName) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIImage {
+  convenience public init?(color: UIKit.UIColor, size: CoreGraphics.CGSize = CGSize(width: 1, height: 1))
+}
+extension UIKit.UIImage {
+  public func cropToCircle() -> UIKit.UIImage?
+  public func resize(targetSize: CoreGraphics.CGSize) -> (UIKit.UIImage, CoreGraphics.CGRect)
+}
+extension UIKit.UIImage {
+  public func resized(toWidth width: CoreGraphics.CGFloat) -> UIKit.UIImage?
+  public func resized(withPercentage percentage: CoreGraphics.CGFloat) -> UIKit.UIImage?
+}
+extension UIKit.UIImage {
+  public var isPortrait: Swift.Bool {
+    get
+  }
+  public var isLandscape: Swift.Bool {
+    get
+  }
+  public var breadth: CoreGraphics.CGFloat {
+    get
+  }
+  public var breadthSize: CoreGraphics.CGSize {
+    get
+  }
+  public var breadthRect: CoreGraphics.CGRect {
+    get
+  }
+  public func rounded(with color: UIKit.UIColor, width: CoreGraphics.CGFloat) -> UIKit.UIImage?
+}
+extension MapstedComponentsCore.SectionName : Swift.Equatable {}
+extension MapstedComponentsCore.SectionName : Swift.Hashable {}

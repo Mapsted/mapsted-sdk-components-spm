@@ -1,0 +1,11 @@
+framework module MapstedComponentsUI {
+  umbrella header "MapstedComponentsUI.h"
+
+  export *
+  module * { export * }
+}
+
+module MapstedComponentsUI.Swift {
+    header "MapstedComponentsUI-Swift.h"
+    requires objc
+}

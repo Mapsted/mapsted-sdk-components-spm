@@ -1,0 +1,11 @@
+framework module MapstedComponentsCore {
+  umbrella header "MapstedComponentsCore.h"
+
+  export *
+  module * { export * }
+}
+
+module MapstedComponentsCore.Swift {
+    header "MapstedComponentsCore-Swift.h"
+    requires objc
+}

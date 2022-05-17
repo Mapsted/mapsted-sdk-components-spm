@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MapstedCore",
+        "repositoryURL": "https://github.com/Mapsted/mapsted-sdk-core-spm",
+        "state": {
+          "branch": null,
+          "revision": "c65b1c861655f873df5260c8d26c15e19d1425a9",
+          "version": "4.6.2"
+        }
+      },
+      {
+        "package": "MapstedNotifications",
+        "repositoryURL": "https://github.com/Mapsted/mapsted-sdk-notify-spm",
+        "state": {
+          "branch": null,
+          "revision": "45eb8f696570225a27570c51acb9fad1c28865ff",
+          "version": "4.6.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
